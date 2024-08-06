@@ -5,7 +5,10 @@ const colors = {
     secondary: "#DFC6FF",
     dark: "#241F23",
     black:"#1D1D1D",
-    light: "#F5F5F5"
+    light: "#F5F5F5",
+    tyouPrimary: "#00A5B4",
+    tyouDark: "#4C4E53"
 
   };
+  
   export const theme = extendTheme({ colors });

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./provider";
 import Navbar from "@/components/Navbar/Navbar";
 import { Flex } from "@chakra-ui/react";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,9 +34,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <Flex  height={"100vh"} width={"100vw"} bgImage={"/bg-texture.png"}>
+          <Flex  height={"100vh"} width={"100vw"} bgImage={"/bg-texture.png"} flexDirection={'column'} justify={'space-between'}>
             <Navbar />
             {children}
+            <Footer/>
           </Flex>
         </Providers>
       </body>
